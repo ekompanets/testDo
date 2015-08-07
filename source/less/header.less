@@ -4,68 +4,43 @@
 }
 
 .page-header {
-  // position: fixed;
-  // position: relative;
-  top: 0;
-  width: 100%;
   min-width: @min-width;
-  // min-height: 100px;
+  min-height: 125px;
+  padding-top: 25px;
   text-transform: uppercase;  
-  background: @brand-primary;
-  opacity: .95;  
-  box-shadow:  0 0 5px 0 @shadow-color;
 
-  @media (min-width: @screen-tablet) {
-    padding: 10px 0;
+  &__container {
+    display: flex;
+
   }
 }
 
 
 .main-nav {
-  position: relative;
-  display: none;
-  transition: transform 0.3s ease;
-
-  @media (min-width: @screen-tablet) {
-    display: block;
-  }
+  // display: none;
+  // transition: transform 0.3s ease;
 
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
-
-    @media (min-width: @screen-tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-  }
+    display: block;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: flex-end;
+}
 
   &__item {    
-    padding: 0 20px; 
-    @media (min-width: @screen-tablet) {
-      // width: 20%;
-
-      // &:nth-child(4n-2) {
-      //   margin-right: 20%;
-      // }
-    }        
+    display: inline-block;
+    color: @text-color;
+      
   }
 
-  &__link {
-    position: relative;
+  &__item a {
     display: inline-block;
     width: 100%;
-    line-height: 55px;
-    color: @body-bg;
-    border-bottom: 1px @border-color;
-    border-top: 1px @border-color;
-
-    @media (min-width: @screen-tablet) {
-      border: none;
-      box-shadow: none;
-    }
+    padding: 40px 15px; 
+    line-height: 1;
 
     &:hover{
       // background: @link-hover-color;
@@ -76,52 +51,14 @@
       }
     }
 
-    &:after {
-      display: block;         
-      content: "";
-      position: absolute;
-      bottom: 2px;
-      width: 0;
-      height: 2px;
-      background: #fff;
-      transition: all 0.2s ease-in-out;
-    }
-
-    &:hover:after {
-      width: 100%;
-    }
-
-
-
-    &:active {
-      color: @text-color;
-      
-      @media (min-width: @screen-tablet) {
-        background: #fff;
-        color: @text-color;
-      }
-    }
   } 
 
   a.main-nav__active { 
 
     @media (min-width: @screen-tablet) {
-      color: #766357;
+      color: @brand-info;
     }
 
-    &:hover{
-      
-      @media (min-width: @screen-tablet) {
-        color: #604e43;
-      }
-    }
-
-    &:active {
-      
-      @media (min-width: @screen-tablet) {
-        color: #d6d0cc;
-      }
-    }
   }  
 
   
@@ -151,19 +88,16 @@
 }
 
 .logo {
-  position: relative;
-  height: 55px;
+  width: 160px;
   // margin-bottom: -15px;
   font-size: 0;
   z-index: 10;
 
-  @media (min-width: @screen-tablet) {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    // left:40%;
-    width: 20%;
-  }
+  
+}
+
+.lang-change {
+  width: 100px;
 }
 
 .toggle {
@@ -187,10 +121,8 @@
   }
 }
 
-.photo {
-  width: 150px;
-  // border-radius: 50%;
+.hidden {
+  display: none;
 }
-
 
 

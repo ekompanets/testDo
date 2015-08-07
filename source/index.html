@@ -7,38 +7,52 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="logo"><a href="#" class="logo-link"><img src="img/logo.png" alt=""></a></div>
-		<nav class="main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__link"><a href="" class="main-nav__active">Продукты</a></li>
-				<li class="main-nav__link"><a href="">Про компанію</a>
-					<ul>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
+		<div class="center-wrapper">
+			<div class="page-header__container">
+				<div class="logo">
+					<a href="#" class="logo-link">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="" class="main-nav__active">Продукты</a></li>
+						<li class="main-nav__item"><a href="">Про компанію</a>
+							<ul class="hidden">
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+							</ul>
+						</li>
+						<li class="main-nav__item"><a href="">Інвестору</a></li>
+						<li class="main-nav__item"><a href="">Відгуки</a></li>
+						<li class="main-nav__item"><a href="">Соціальні ініціативи</a></li>
+						<li class="main-nav__item"><a href="">Контакти</a></li>
 					</ul>
-				</li>
-				<li class="main-nav__link"><a href="">Інвестору</a></li>
-				<li class="main-nav__link"><a href="">Відгуки</a></li>
-				<li class="main-nav__link"><a href="">Соціальні ініціативи</a></li>
-				<li class="main-nav__link"><a href="">Контакти</a></li>
-			</ul>
-		</nav>
-		<div class="lang-change"></div>
+				</nav>
+				<div class="lang-change">English</div>
+			</div>
+		</div>
 	</header>
 	<main>
 		<div class="promo">
-			<h1 class="promo__title">Інвесторам</h1>
-			<p class="promo__text">Вражаючі результати, яких агро-компанія “Зоря” досягла за досит</p>			
+			<div class="center-wrapper">
+				<h1 class="promo__title">Інвесторам</h1>
+				<p class="promo__text">Вражаючі результати, яких агро-компанія “Зоря” досягла за досить невеликий час, спонукають керівництво компанії до нових звершень. Компанія націлена не зупинятися на своїх досягненнях, а цілеспрямовано розвиватися у різних напрямках.<br> 
+					Безумовно, компанії "Зоря" можна довіряти. Компанія є спроможним та надійним гравцем на ринку, її показники динамічно ростуть, незважаючи на досить важку та нестабільну в країні ситуацію. <br>
+					Питання, чи варто інвестувати в компанію, лежить на поверхні. Цвість укладення більш вигідних контрактів і як наслідок, заслужене визнання іншими учасниками ринку.</p>
+			</div>
 		</div>
-		<div class="clients">
-			<p class="clients__title">Головними клієнтами є:</p>
-			<ul class="client__list">
-				<li class="client__item">всі переробні компанії в Україні (в тому числі найбільші українські компанії "Ліктрави" та "Віола"</li>
-				<li class="client__item">переважна більшість імпортерів льону в Європі та Азії</li>
-			</ul>
+		<div class="center-wrapper">
+			<div class="clients">
+				<p class="clients__title">Головними клієнтами є:</p>
+				<ul class="clients__list">
+					<li class="clients__item">всі переробні компанії в Україні (в тому числі найбільші українські компанії "Ліктрави" та "Віола"</li>
+					<li class="clients__item">переважна більшість імпортерів льону в Європі та Азії</li>
+				</ul>				
+			</div>
 			<section class="charts">
 				<!-- .chart>(h2._title)+._img>(ul._list-y>li._y-item*4)+(dl._list-x>(dt._x-item+dd._x-item-pic)*3) -->
 				<div class="chart">
@@ -61,34 +75,40 @@
 					</div>
 				</div>
 			</section>
-
+		
 			<!-- .technics>h2._title+(ul._list>li._item*4) -->
 			<div class="technics">
 				<h2 class="technics__title">Парк техніки</h2>
 				<ul class="technics__list">
-					<li class="technics__item">7 тракторів</li>
-					<li class="technics__item">1 комбайн</li>
-					<li class="technics__item">2 сіялки</li>
-					<li class="technics__item">2 оприскувачі</li>
+					<li class="technics__item technics__item--tractor">7 тракторів</li>
+					<li class="technics__item technics__item--combine">1 комбайн</li>
+					<li class="technics__item technics__item--seeder">2 сіялки</li>
+					<li class="technics__item technics__item--sprayer">2 оприскувачі</li>
 				</ul>
 			</div>
-
+		
 			<!-- .partners>h2._title+(ul._list>(li._item>a[href="#"])*3) -->
 			<div class="partners">
 				<h2 class="partners__title">Ключові партнери</h2>
 				<ul class="partners__list">
-					<li class="partners__item"><a href="#">Ліктрави</a></li>
-					<li class="partners__item"><a href="#">Віола</a></li>
-					<li class="partners__item"><a href="#">Coros Trade</a></li>
+					<li class="partners__item partners__item--liktravy"><a href="#">Ліктрави</a></li>
+					<li class="partners__item partners__item--viola"><a href="#">Віола</a></li>
+					<li class="partners__item partners__item--coros"><a href="#">Coros Trade</a></li>
 				</ul>
 			</div>
+			<div>
+				<h2 class="resume">Компанія "Зоря" очолює  <br>Українську Асоціацію Льонарів</h2>
+			</div>
 		</div>
+		
 	</main>
 	<footer class="page-footer">
-		<div class="social-btns">
-			<a href="" class="social-btns__icon-fb btn">Facebook</a>
+		<div class="center-wrapper">
+			<div class="social-btns">
+				<a href="" class="social-btns__icon-fb btn btn--social">Facebook</a>
+			</div>
+			<div class="copyright">(C) 2015 Зоря - Агро</div>
 		</div>
-		<div class="copyright">(C) 2015 Зоря - Агро</div>
 	</footer>
 </body>
 </html>
