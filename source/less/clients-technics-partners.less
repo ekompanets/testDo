@@ -44,7 +44,9 @@
     position: relative;
     display: inline-block;
     width: 25%;
+    min-width: 200px;
     padding-top: 80px;
+    margin-bottom: 30px;
     font-size: @font-size-base;
 
     &:before {
@@ -95,20 +97,29 @@
   &__item {
     display: inline-block;
     width: 33.3%;
+    min-width: 250px;
     height: 60px;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-bottom: 30px;
   }
 
-  &__item--liktravy {
+  &__item a{
+    display: block;
+    // padding: 50px 0;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  &__item--liktravy a {
     background-image: url("../img/icon-liktravy.png");      
   }
 
-  &__item--viola {
+  &__item--viola a {
     background-image: url("../img/icon-viola.png");      
   }
 
-  &__item--coros {
+  &__item--coros a {
     background-image: url("../img/icon-coros.png");      
   }
 }
