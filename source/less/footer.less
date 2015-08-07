@@ -1,0 +1,46 @@
+.page-footer {  
+  padding: 10px 0;
+  background: @brand-contrast;
+  min-width: @min-width;
+  font-weight: 700;
+  box-shadow:  0 0 5px 0 @shadow-color;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__copyright {
+    padding-left: 20px;
+    font-size: 10px;
+  }
+}
+
+.social-btns {
+  display: flex;
+  justify-content:flex-end;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+
+  &__icon-git,
+  &__icon-skype,
+  &__icon-linked {
+    .hidden-text();
+    font: 0/0 a !important;
+    padding: 14px;
+    // width: 46px;
+    // height: 46px;
+    text-decoration: none;
+    vertical-align: middle;
+    background: @body-bg;
+  }
+  
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: @body-bg;
+  }
+
+}  

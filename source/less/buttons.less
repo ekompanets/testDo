@@ -1,0 +1,78 @@
+.btn {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background: @body-bg;
+  font-size: @font-size-base;
+  line-height: 1.24em;
+  font-weight: 700;
+  text-align: center;
+  color: @text-color;
+  transition: .4s;
+  border: 2px solid @border-color;  
+
+  &:hover {
+    color: @body-bg;
+    background: @border-color;
+  }
+
+}
+
+.btn:last-of-type {
+  margin-right: 0;
+}
+
+.btn--left {
+  margin-left: 0;
+}
+
+.btn--right {
+  margin-right: 0;
+}
+
+.btn--success { 
+  border: 2px solid @brand-success;
+  color: @brand-success;
+
+  &:hover {
+    background: @brand-success;
+  }
+}
+
+.btn--info { 
+  border: 2px solid @brand-info;
+  color: @brand-info;
+
+  &:hover {
+    background: @brand-info;
+  }
+}
+
+.btn--warning { 
+  border: 2px solid @brand-warning;
+  color: @brand-warning;
+
+  &:hover {
+    background: @brand-warning;
+  }
+}
+
+.btn--danger { 
+  border: 2px solid @brand-danger;
+  color: @brand-danger;
+
+  &:hover {
+    background: @brand-danger;
+  }
+}
+
+.btn--social { 
+  border: none;
+  background: transparent;
+  color: transparent;
+
+  &:hover {
+    background: transparent;
+  }
+}
