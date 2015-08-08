@@ -41,43 +41,65 @@
   }
 
   &__item {
-    position: relative;
+    // position: relative;
     display: inline-block;
     width: 25%;
     min-width: 200px;
     padding-top: 80px;
     margin-bottom: 30px;
+
+    // &:before {
+    //   position: absolute;
+    //   display: block;
+    //   content: "";
+    //   top: 0;
+    //   width: 100%;
+    //   height: 65px;
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+
+
+    // }
+  }
+
+  &__item a {
+    position: relative;
+    padding-top: 80px;
     font-size: @font-size-base;
+    line-height: 1.5em;
+    opacity: @opacity-link;
+
+    &:hover {
+      opacity: @opacity-hover;
+    }
 
     &:before {
       position: absolute;
       display: block;
       content: "";
-      top: 0;
+      bottom: 1.5em;
+      left: 0;
       width: 100%;
       height: 65px;
       background-position: center;
       background-repeat: no-repeat;
+    } 
 
-
-    }
   }
 
-
-
-  &__item--tractor:before {
+  &__item--tractor a:before {
     background-image: url("../img/icon-tractor.png");   
   }
 
-  &__item--combine:before {
+  &__item--combine a:before {
     background-image: url("../img/icon-combine.png");   
   }
 
-  &__item--seeder:before {
+  &__item--seeder a:before {
     background-image: url("../img/icon-seeder.png");    
   }
 
-  &__item--sprayer:before {
+  &__item--sprayer a:before {
     background-image: url("../img/icon-sprayer.png");   
   }
 }
@@ -108,6 +130,11 @@
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: @opacity-link;
+
+    &:hover {
+      opacity: @opacity-hover;
+    }
 
   }
 

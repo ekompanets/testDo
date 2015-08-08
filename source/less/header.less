@@ -28,11 +28,13 @@
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: flex-end;
-}
+  }
 
   &__item {    
+    position: relative;
     display: inline-block;
     color: @text-color;
+    background-color: green;
       
   }
 
@@ -50,8 +52,18 @@
         // color: @brand-info;
       }
     }
+  }
 
-  } 
+  &__sub-menu  {
+    display: none;
+    position:absolute;
+    padding:0;
+    margin:0;
+    list-style:none;
+    background:#FCF8E3;
+    width: 150px;
+    left: 1px;
+  }
 
   a.main-nav__active { 
 
@@ -85,6 +97,10 @@
     animation: menu-open 0.4s;
     transform: translateY(0);
   }
+}
+
+.show+.main-nav__sub-menu  {
+  display: block;
 }
 
 .logo {
@@ -121,8 +137,5 @@
   }
 }
 
-.hidden {
-  display: none;
-}
 
 
