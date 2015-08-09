@@ -1,19 +1,15 @@
 .animated {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
 @-webkit-keyframes slideInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
+    transform: translateY(-40px);
   }
 
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -21,20 +17,15 @@
 @keyframes slideInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
+    transform: translateY(-40px);
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
-.slideInDown {
-  -webkit-animation-name: slideInDown;
+.animation__slideInDown {
   animation-name: slideInDown;
 }
 
@@ -42,14 +33,10 @@
 @-webkit-keyframes scaleInUp {
   0% {
     opacity: 0;
-    -webkit-transform: scale(1, 0);
-    -ms-transform: scale(1, 0);
     transform: scale(1, 0);
   }
 
   100% {
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
@@ -58,24 +45,25 @@
   0% {
     opacity: 0;
     transform-origin: bottom;
-    -webkit-transform: scale(1, 0);
-    -ms-transform: scale(1, 0);
     transform: scale(1, 0);
   }
 
   100% {
     transform-origin: bottom;
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 }
 
-.scaleInUp {
-  -webkit-animation-name: scaleInUp;
+.animation__scaleInUp {
   animation-name: scaleInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
   // transition: height 500ms cubic-bezier(.39,.575,.565,1);
   // will-change: height;
+}
+
+.animation__pulse:hover {
+  transform: translate3d(0,0,0) scale(1.2) ;  
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }

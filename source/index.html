@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/sprites.css">
     <!-- <link rel="stylesheet" media="all" href="css/animate.css">   -->
     <!-- <link rel="stylesheet" media="all" href="css/animate-mine.css"> -->
-    <script src="js/wow.min.js"></script>
+    <script src="js/lib/wow.min.js"></script>
+    <script src="js/lib/grunticon.loader.js"></script>
+    <script>
+      grunticon(["css/icons.data.svg.css", "css/icons.data.png.css", "css/icons.fallback.css"], grunticon.svgLoadedCallback );
+    </script>
+    <noscript>    
+      <link href="css/icons.fallback.css" rel="stylesheet">
+    </noscript>
+
+
   <script>new WOW().init();</script>
 </head>
 <body>
@@ -14,48 +25,104 @@
     <div class="center-wrapper">
       <div class="page-header__container">
         <div class="logo">
-          <a href="#" class="logo-link">
-            <img src="img/logo.png" alt="">
+          <a href="#" class="logo__link">Зоря</a>
+          <a href="#" class="toggle icon-menu">
+            <div class="toggle__icon">
+                <span></span>
+            </div>
           </a>
+          <a href="#" class="toggle-close icon-cross"></a>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="" class="main-nav__active">Продукты</a>
+            <li class="main-nav__item  main-nav__item--long show">
+              <a class="main-nav__link main-nav__active" href="">Продукти
+              </a>
               <ul class="main-nav__sub-menu">
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--long">
+              <a class="main-nav__link" href="" class="">Про компанію</a>
+              <ul class="main-nav__sub-menu">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--short">
+              <a class="main-nav__link main-nav__active" href="">Клієнту
+              </a>
+              <ul class="main-nav__sub-menu">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
               </ul>
             </li>
             <li class="main-nav__item">
-              <a href="" class="">Про компанію</a>
-              <ul class="main-nav__sub-menu">
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-              </ul>
-            </li>
-            <li class="main-nav__item">
-              <a href="">Інвестору</a>
+              <a class="main-nav__link" href="">Інвестору</a>
               <ul class="main-nav__sub-menu ">
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
-                <li><a href="">Пункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
               </ul>
             </li>
-            <li class="main-nav__item"><a href="">Відгуки</a></li>
-            <li class="main-nav__item"><a href="">Соціальні ініціативи</a></li>
-            <li class="main-nav__item"><a href="">Контакти</a></li>
+            <li class="main-nav__item main-nav__item--long">
+              <a class="main-nav__link" href="">Відгуки</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--long">
+              <a class="main-nav__link" href="">Соціальні ініціативи</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--short">
+              <a class="main-nav__link" href="">Про нас</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Контакти</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
-        <div class="lang-change">English</div>
+
+        
+        <div class="lang"><a href="" class="lang__link">English</a></div>
       </div>
     </div>
   </header>
@@ -65,7 +132,7 @@
         <h1 class="promo__title">Інвесторам</h1>
         <p class="promo__text">Вражаючі результати, яких агро-компанія “Зоря” досягла за досить невеликий час, спонукають керівництво компанії до нових звершень. Компанія націлена не зупинятися на своїх досягненнях, а цілеспрямовано розвиватися у різних напрямках.<br> 
           Безумовно, компанії "Зоря" можна довіряти. Компанія є спроможним та надійним гравцем на ринку, її показники динамічно ростуть, незважаючи на досить важку та нестабільну в країні ситуацію. <br>
-          Питання, чи варто інвестувати в компанію, лежить на поверхні. Цвість укладення більш вигідних контрактів і як наслідок, заслужене визнання іншими учасниками ринку.</p>
+          Питання, чи варто інвестувати в компанію, лежить на поверхні. Цілком варто! Цим ви не тільки допоможете стрімкому зростанню компанії, але прицьому отримаєте циск, як інвестора. Результатом є можливість укладення більш вигідних контрактів і як наслідок, заслужене визнання іншими учасниками ринку.</p>
       </div>
     </div>
     <div class="center-wrapper">
@@ -89,9 +156,9 @@
             </ul>
             <div class="chart__inner">
               <ul class="chart__x-list">
-                <li class="chart__x-item scaleInUp wow" data-number="1,035 млн грн" data-year="2013 год">2013 год</li>
-                <li class="chart__x-item scaleInUp wow" data-number="2,24 млн грн" data-year="2014 год">2014 год</li>
-                <li class="chart__x-item scaleInUp wow" data-number="3,18 млн грн" data-year="6 месяцев 2015">6 месяцев 2015</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay="0s"data-number="1,035 млн грн" data-year="2013 год">2013 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".2s"data-number="2,24 млн грн" data-year="2014 год">2014 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".4s"data-number="3,18 млн грн" data-year="6 месяцев 2015">6 месяцев 2015</li>
               </ul>
             </div>
           </div>
@@ -108,16 +175,16 @@
             </ul>
             <div class="chart__inner">
               <ul class="chart__x-list">
-                <li class="chart__x-item scaleInUp wow" data-number="13 покупців" data-year="2013 год">2013 год</li>
-                <li class="chart__x-item scaleInUp wow" data-number="18 покупців" data-year="2014 год">2014 год</li>
-                <li class="chart__x-item scaleInUp wow" data-number="72 покупців" data-year="2015 год">2015 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay="0s"data-number="13 покупців" data-year="2013 год">2013 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".2s"data-number="18 покупців" data-year="2014 год">2014 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".4s"data-number="72 покупців" data-year="2015 год">2015 год</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div class="chart chart--terra">
-          <h2 class="chart__title">Кількість покупців</h2>
+          <h2 class="chart__title">Банк землі, яка обробляється (%)</h2>
           <div class="chart__img">
             <ul class="chart__y-list">
               <li class="chart__y-item">100</li>
@@ -127,33 +194,31 @@
             </ul>
             <div class="chart__inner">
               <ul class="chart__x-list">
-                <li class="chart__x-item scaleInUp wow" data-number="15%" data-year="2013 год">2013 год</li>
-                <li class="chart__x-item scaleInUp wow" data-number="60%" data-year="2014 год">2014 год</li>
-                <li class="chart__x-item scaleInUp wow" data-number="81%" data-year="2015 год">2015 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay="0s"data-number="15%" data-year="2013 год">2013 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".2s"data-number="60%" data-year="2014 год">2014 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".4s"data-number="81%" data-year="2015 год">2015 год</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
     
-      <!-- .technics>h2._title+(ul._list>li._item*4) -->
       <div class="technics">
         <h2 class="technics__title">Парк техніки</h2>
         <ul class="technics__list">
-          <li class="technics__item technics__item--tractor slideInDown wow" data-wow-offset="100" data-wow-delay="0s"><a href="#">7 тракторів</a></li>
-          <li class="technics__item technics__item--combine slideInDown wow" data-wow-offset="100" data-wow-delay="0.1s"><a href="#">1 комбайн</a></li>
-          <li class="technics__item technics__item--seeder slideInDown wow" data-wow-offset="100" data-wow-delay="0.2s"><a href="#">2 сіялки</a></li>
-          <li class="technics__item technics__item--sprayer slideInDown wow" data-wow-offset="100" data-wow-delay="0.3s"><a href="#">2 оприскувачі</a></li>
+          <li class="technics__item  animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0s"><a class="icon-tractor" href="#">7 тракторів</a></li>
+          <li class="technics__item  animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0.2s"><a class="icon-combine" href="#">1 комбайн</a></li>
+          <li class="technics__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0.4s"><a class="icon-seeder" href="#">2 сіялки</a></li>
+          <li class="technics__item  animation__slideInDown wow" data-wow-offset="100" data-wow-delay=".8s"><a class="icon-sprayer" href="#">2 оприскувачі</a></li>
         </ul>
       </div>
     
-      <!-- .partners>h2._title+(ul._list>(li._item>a[href="#"])*3) -->
       <div class="partners">
         <h2 class="partners__title">Ключові партнери</h2>
         <ul class="partners__list">
-          <li class="partners__item partners__item--liktravy slideInDown wow" data-wow-offset="100" data-wow-delay="0s"><a href="#">Ліктрави</a></li>
-          <li class="partners__item partners__item--viola slideInDown wow" data-wow-offset="100" data-wow-delay=".1s"><a href="#">Віола</a></li>
-          <li class="partners__item partners__item--coros slideInDown wow" data-wow-offset="100" data-wow-delay=".2s"><a href="#">Coros Trade</a></li>
+          <li class="partners__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0s"><a class="icon-liktravy" href="#">Ліктрави</a></li>
+          <li class="partners__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay=".2s"><a class="icon-viola" href="#">Віола</a></li>
+          <li class="partners__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay=".4s"><a class="icon-coros" href="#">Coros Trade</a></li>
         </ul>
       </div>
       <div>
@@ -165,9 +230,9 @@
   <footer class="page-footer">
     <div class="center-wrapper">
       <div class="social-btns">
-        <a href="" class="social-btns__icon-fb btn btn--social">Facebook</a>
+        <a href="" class="social-btns__fb btn--social animation__pulse">Facebook</a>
       </div>
-      <div class="copyright">(C) 2015 Зоря - Агро</div>
+      <div class="page-footer__copyright">(C) 2015 Зоря - Агро</div>
     </div>
   </footer>
 

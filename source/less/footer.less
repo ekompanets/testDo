@@ -4,42 +4,22 @@
   font-weight: 700;
   border-top: 2px solid #fdd947;
 
-  &__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
+  
   &__copyright {
-    padding-left: 20px;
-    font-size: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
   }
 }
 
 .social-btns {
-  display: flex;
-  justify-content:space-between;
-  margin: 0;
-  padding: 10px 0;
+  // display: flex;
+  // justify-content:space-between;
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 8px 0;
   font-size: 0;
+  border-bottom: 1px solid #dfe6e8;
 
-  &__icon-git,
-  &__icon-skype,
-  &__icon-linked {
-    .hidden-text();
-    font: 0/0 a !important;
-    padding: 14px;
-    // width: 46px;
-    // height: 46px;
-    text-decoration: none;
-    vertical-align: middle;
-    background: @body-bg;
-  }
   
-  svg {
-    width: 30px;
-    height: 30px;
-    fill: @body-bg;
-  }
-
 }  

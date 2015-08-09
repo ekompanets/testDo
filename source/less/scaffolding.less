@@ -28,7 +28,9 @@ body {
   margin: 0;
   font-family: @font-family-base;
   font-size: @font-size-base;
+  font-weight: normal;
   line-height: @line-height-base;
+  letter-spacing: 1px;
   color: @text-color;
   background-color: @body-bg;
 }
@@ -39,6 +41,11 @@ body {
   margin: auto;
   padding: 0;
   text-align: center;
+
+  @media (max-width: @screen-desktop) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   
 }
 
